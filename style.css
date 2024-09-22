@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        padding: 20px;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(41, 2, 41));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+
+    #logo {
+        width: 40vw; 
+        border-radius: 100%;
+    }
+
+    .glow-effect {
+        border-radius: 100%;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+    .glow-effect:hover {
+        box-shadow: 0 0 20px purple, 0 0 30px purple;
+        transform: scale(1.05);
+    }
+    
+
+    h1 {
+        color: aliceblue;
+        font-family: "Protest Guerrilla", sans-serif;
+        text-align: center; /* Center align for better look on larger screens */
+    }
+
+
+    .glow-text {
+        font-size: 40px;
+        color: white; /* Text color */
+        text-align: center;
+        text-shadow: 
+            0 0 5px purple, 
+            0 0 10px purple, 
+            0 0 15px purple, 
+            0 0 20px purple; /* Glowing effect */
+    }
+    
+    #name {
+        color: rgb(212, 43, 122);
+        font-size: 5vw;
+    }
+
+    #va {
+        color: rgb(43, 206, 212);
+        font-size: 5vw;
+    }
+
+    #voice {
+        width: 150px;
+        display: none;
+    }
+
+    #btn {
+        background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+        padding: 10px 20px; /* Adjusted padding */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 4vw;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
+        border: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        box-shadow: 2px 2px 20px rgb(21, 145, 207), 2px 2px 20px rgb(201, 41, 116);
+        letter-spacing: 2px;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 600px) {
+        #logo {
+            width: 30vw;
+        }
+
+        #name,
+        #va {
+            font-size: 6vw;
+        }
+
+        #btn {
+            font-size: 5vw;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 900px) {
+        #logo {
+            width: 20vw;
+        }
+
+        #name,
+        #va {
+            font-size: 5vw;
+        }
+
+        #btn {
+            font-size: 4.5vw;
+        }
+    }
+
+    @media (min-width: 901px) and (max-width: 1200px) {
+        #logo {
+            width: 15vw;
+        }
+
+        #name,
+        #va {
+            font-size: 4vw;
+        }
+
+        #btn {
+            font-size: 4vw;
+        }
+    }
+
+    @media (min-width: 1201px) {
+        #logo {
+            width: 10vw;
+        }
+
+        #name,
+        #va {
+            font-size: 3vw;
+        }
+
+        #btn {
+            font-size: 3vw;
+        }
+    }
